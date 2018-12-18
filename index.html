@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Idle Letters</title>
+    <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+    <script src="scripts/letters.js" charset="utf-8"></script>
+    <script src="scripts/Cubes.js" charset="utf-8"></script>
+    <script src="scripts/game.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body class="night" onload="init()">
+    <footer>
+      <button onclick="resetEverything()">
+        Hard Reset (This button resets your save and reloads the page !!!!!NO GOING BACK!!!!!)
+      </button>
+      <div>
+        <button onclick="showDevWhatIsWrong()">export</button>
+      </div>
+      <div>
+        <input type="radio" name="mode" value="day" onclick="changeTheme(this)"> <label>Day</label>
+          <br>
+        <input type="radio" name="mode" value="night" onclick="changeTheme(this)" checked="checked"> <label>Night</label>
+      </div>
+    </footer>
+  </body>
+</html>

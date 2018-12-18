@@ -1,0 +1,110 @@
+body {
+  font-family: monospace;
+}
+
+.day {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.night {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(19, 5vw);
+  grid-template-rows: repeat(5, 5vw);
+
+}
+
+button {
+  border: 1px solid #0066cc;
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:hover {
+  border: 1px solid #0099cc;
+  background-color: #00aacc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.cube {
+  border: 1vw solid rgb(30,30,30);
+}
+
+.cube.topActive {
+  border-top-color: #1abc9c;
+}
+
+.cube.rightActive {
+  border-right-color: #1abc9c;
+}
+
+.cube.bottomActive {
+  border-bottom-color: #1abc9c;
+}
+
+.cube.leftActive {
+  border-left-color: #1abc9c;
+}
+
+.cube.leftMigrate {
+  border-left-color: crimson;
+}
+
+.cube.topMigrate {
+  border-top-color: crimson;
+}
+
+.cube.rightMigrate {
+  border-right-color: crimson;
+}
+
+.cube.bottomMigrate {
+  border-bottom-color: crimson;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+  white-space: pre;
+}
+
+.green {
+  background: rgb(0, 255, 0);
+  white-space: pre;
+}
+
+#cubeUpgradeMenu {
+  display: flex;
+  float: right;
+}

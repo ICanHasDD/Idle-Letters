@@ -1,0 +1,92 @@
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flexContainer > div {
+  display: flex;
+  align-self: flex-end;
+  height: 100%;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+  white-space: pre;
+}
+
+.green {
+  background: rgb(0, 255, 0);
+  white-space: pre;
+}
+
+button {
+  border: 1px solid #0066cc;
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:hover {
+  border: 1px solid #0099cc;
+  background-color: #00aacc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+body {
+  font-family: monospace;
+}
+
+div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div > div > div > button {
+  width: 5vw;
+  height: 2.5vw;
+}
+
+body > div > div > label {
+  font-size: 5vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+}
+
+header > div > div > input {
+  width: 1vw;
+  height: 1vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+}
+
+.day {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.night {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
